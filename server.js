@@ -12,10 +12,10 @@ const util = require('util');
 // Express dependencies
 const express = require('express');
 const bodyParser = require('body-parser');
-const cors       = require('cors');
+const cors = require('cors');
 
 // Data dependencies
-const mongoose   = require('mongoose');
+const mongoose = require('mongoose');
 
 /**************************************/
 //*****// Variable Declaration
