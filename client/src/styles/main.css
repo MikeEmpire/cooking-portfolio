@@ -8,13 +8,13 @@ already applied. */
 /* We use this for creating scalable elements
 (usually images / background images) that maintain a ratio. */
 /* Truncate text */
-#home .col:first-child {
+#home .col-md-6:first-child {
   background-image: url("/img/ads.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh; }
 
-#home .col {
+#home .col-md-6 {
   background-image: url("/img/cooking_bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;

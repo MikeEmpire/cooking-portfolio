@@ -1,10 +1,10 @@
 @import "../utils/mixins";
 
 #home {
-  .col:first-child {
+  .col-md-6:first-child {
     @include home--full--bg("/img/ads.jpg");
   }
-  .col {
+  .col-md-6 {
     @include home--full--bg("/img/cooking_bg.jpg");
   }
 }

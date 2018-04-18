@@ -1,6 +1,8 @@
 machine:
-  node:
-    version: 8.9.1
+  version: 8.9.1
   post:
     - npm install -g codeclimate-test-reporter
     - codeclimate-test-reporter < coverage/lcov.info
+  jobs:
+    - npm install
+    - npm install --prefix client
