@@ -1,0 +1,38 @@
+/* To quickly centre a block element without having to
+worry about if there is any top or bottom margin
+already applied. */
+@mixin push--auto {
+  margin: {
+    left: auto;
+    right: auto;
+  }
+}
+/* We use this for creating scalable elements
+(usually images / background images) that maintain a ratio. */
+@mixin responsive-ratio($x,$y, $pseudo: false) {
+  $padding: unquote(($y / $x) * 100 + '%');
+  @if $pseudo {
+    &:before {
+      @include pseudo($pos: relative);
+      width: 100%;
+      padding-top: $padding;
+    }
+  } @else {
+    padding-top: $padding;
+  }
+}
+
+/* Truncate text */
+@mixin truncate($truncation-boundary) {
+  max-width: $truncation-boundary;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@mixin home--full--bg($background-path) {
+  background-image: url($background-path);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}

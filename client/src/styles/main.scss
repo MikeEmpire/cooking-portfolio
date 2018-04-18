@@ -1,0 +1,30 @@
+/* base styles that holds general styles */
+@import "./base/color";
+@import "./base/reset";
+@import "./base/typography";
+
+/* Main parts of the site such as buttons, nav */
+@import "./components/buttons";
+@import "./components/navigation";
+
+/* Style the bootstrap grid */
+@import "./layout/grid";
+
+/* Page specific Styles */
+@import "./pages/about";
+@import "./pages/contact";
+@import "./pages/home";
+
+/* Styles for the theme */
+@import "./themes/theme";
+
+/* Helpers and variables */
+@import "./utils/functions";
+@import "./utils/mixins";
+@import "./utils/variables";
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}

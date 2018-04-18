@@ -1,0 +1,34 @@
+/* base styles that holds general styles */
+/* Main parts of the site such as buttons, nav */
+/* Style the bootstrap grid */
+/* Page specific Styles */
+/* To quickly centre a block element without having to
+worry about if there is any top or bottom margin
+already applied. */
+/* We use this for creating scalable elements
+(usually images / background images) that maintain a ratio. */
+/* Truncate text */
+#home .col:first-child {
+  background-image: url("/img/ads.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh; }
+
+#home .col {
+  background-image: url("/img/cooking_bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh; }
+
+/* Styles for the theme */
+/* Helpers and variables */
+/* To quickly centre a block element without having to
+worry about if there is any top or bottom margin
+already applied. */
+/* We use this for creating scalable elements
+(usually images / background images) that maintain a ratio. */
+/* Truncate text */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif; }
